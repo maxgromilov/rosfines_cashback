@@ -1,0 +1,11 @@
+{
+    "id": "2",
+    "name": "AutoLive",
+    "title": "Запишитесь в автосервис AutoLive сейчас и получите 15% кэшбэка",
+    "description": "После оплаты услуг, загрузите фото чека в приложение и мы перечислим 15% от потраченной суммы вам на телефон.",
+    "phone": "+7 (905) 888-88-88",
+    "logo": "http://www.simmonsgarageandtowing.com/s/cc_images/cache_896025513.png?t=1466465714",
+    "image": "/img/companys/AutoLive/photo.jpg",
+    "cashback": 15,
+    "maxCashback": 3000
+}

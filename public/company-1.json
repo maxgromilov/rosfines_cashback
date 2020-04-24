@@ -1,0 +1,11 @@
+{
+    "id": "1",
+    "name": "MyAutoLab",
+    "title": "Запишитесь в автосервис MyAutoLab сейчас и получите 10% кэшбэка",
+    "description": "После оплаты услуг, загрузите фото чека в приложение и мы перечислим 10% от потраченной суммы вам на телефон.",
+    "phone": "+7 (905) 555-77-15",
+    "logo": "/img/companys/MyAutoLab/logo/logo@3x.png",
+    "image": "/img/companys/MyAutoLab/photo@3x.jpg",
+    "cashback": 10,
+    "maxCashback": 2000
+}

@@ -1,25 +1,26 @@
 <template>
-    <c-form-receipt />
+    <div class="receipt">
+        <c-navbar />
+        <c-form-receipt />
+    </div>
 </template>
 
 <script>
-import CFormReceipt from '@/components/CFormReceipt';
-import CNavbar from '@/components/CNavbar';
+import CFormReceipt from "@/components/CFormReceipt";
+import CNavbar from "@/components/CNavbar";
 
 export default {
-    name: 'receipt',
+    name: "receipt",
     components: {
         CFormReceipt,
-        CNavbar,
-    },
+        CNavbar
+    }
 };
 </script>
 
 <style lang="scss">
-@import '@/components/bootstrap/vars';
+@import "@/components/bootstrap/vars";
 .receipt {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    padding-top: 4rem;
 }
 </style>

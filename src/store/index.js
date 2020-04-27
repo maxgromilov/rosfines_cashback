@@ -40,10 +40,13 @@ export default new Vuex.Store({
       };
       return new Promise(async (resolve, reject) => {
         try {
-          // const res = await axios.post('/receipt', data);
-          // if (res.status == 200) {
-          //   resolve(true);
-          // }
+          const res = await axios.post('https://schoolattestation.ru/notify/send-email', data, {
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            }});
+          if (res.status == 200) {
+            resolve(true);
+          }
           resolve(true)
         } catch (e) {
           //reject(false)

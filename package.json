@@ -11,6 +11,8 @@
     "bootstrap": "^4.4.1",
     "bootstrap-vue": "^2.12.0",
     "core-js": "^3.6.5",
+    "dns": "^0.2.2",
+    "mailgun-js": "^0.22.0",
     "vee-validate": "^3.2.5",
     "vue": "^2.6.11",
     "vue-image-upload-resize": "^2.3.0",

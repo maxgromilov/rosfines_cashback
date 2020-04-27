@@ -82,6 +82,7 @@ export default {
     border: none;
     display: block;
     width: 100%;
+    padding: 1px;
     &__group {
         position: relative;
         height: 56px;

@@ -1,6 +1,6 @@
 <template>
     <div class="success">
-        <!-- <c-navbar /> -->
+        <c-navbar />
         <div class="success__message">
             <div class="success__message__icon">
                 <icon-success />
@@ -36,7 +36,7 @@ export default {
 <style lang="scss">
 @import "@/components/bootstrap/vars";
 .success {
-    height: 100%;
+    height: calc(100vh - 2rem);
     display: flex;
     flex-direction: column;
     padding-bottom: 4.5rem;

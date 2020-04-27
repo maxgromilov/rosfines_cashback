@@ -2,8 +2,8 @@
     <nav class="c-navbar">
         <b-container class="c-navbar__container">
             <div class="c-navbar__bg" :class="variant">
-                <router-link :to="to" class="c-navbar__link"
-                    ><icon-arrow-left />
+                <router-link :to="to" class="c-navbar__link">
+                    <icon-arrow-left />
                 </router-link>
                 {{ title }}
             </div>
@@ -12,23 +12,23 @@
 </template>
 
 <script>
-import IconArrowLeft from '@/components/icons/IconArrowLeft';
+import IconArrowLeft from "@/components/icons/IconArrowLeft";
 export default {
     props: {
         title: {
-            default: 'Получение денег',
+            default: "Получение денег"
         },
         to: {
-            default: '/',
+            default: "/"
         },
         variant: {
-            default: 'white',
-        },
+            default: "white"
+        }
     },
-    name: 'CMainHeader',
+    name: "CMainHeader",
     components: {
-        IconArrowLeft,
-    },
+        IconArrowLeft
+    }
 
     // computed: {
     //     ...mapGetters(['company', 'contacts']),
@@ -37,7 +37,7 @@ export default {
 </script>
 
 <style lang="scss">
-@import '@/components/bootstrap/vars';
+@import "@/components/bootstrap/vars";
 .c-navbar {
     position: fixed;
     left: 0px;
@@ -49,9 +49,10 @@ export default {
 
     z-index: 100;
     &__bg {
-        padding: 1rem 0;
+        padding: 1rem;
         font-size: 20px;
         font-weight: 500;
+        margin: 0 -1rem;
         &.white {
             background-color: #ffffff;
         }

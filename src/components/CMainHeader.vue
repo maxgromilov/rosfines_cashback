@@ -1,33 +1,27 @@
 <template>
-    <b-aspect
-        aspect="4:2"
-        class="header"
-        :style="`background-image: url(${company.image || ''})`"
-    >
+    <b-aspect aspect="4:2" class="header" :style="`background-image: url(${company.image || ''})`">
         <div class="header__content">
-            <h1 class="header__title">
-                {{ company.title }}
-            </h1>
+            <h1 class="header__title" v-html="company.title"></h1>
             <img :src="company.logo" :alt="company.name" class="header__logo" />
         </div>
     </b-aspect>
 </template>
 
 <script>
-import { mapGetters } from 'vuex';
+import { mapGetters } from "vuex";
 export default {
-    name: 'HelloWorld',
+    name: "HelloWorld",
     props: {
-        msg: String,
+        msg: String
     },
     computed: {
-        ...mapGetters(['company']),
-    },
+        ...mapGetters(["company"])
+    }
 };
 </script>
 
 <style lang="scss">
-@import '@/components/bootstrap/vars';
+@import "@/components/bootstrap/vars";
 .header {
     position: relative;
     margin-left: -1rem;
